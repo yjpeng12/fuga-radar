@@ -48,7 +48,7 @@ class RadarTest {
         assertEquals(1, result.size());
         assertEquals("invader_2", result.get(0).invader.id);
 
-        result = radar.detect(new Image(Arrays.asList("000", "ooo")));
+        result = radar.detect(new Image(Arrays.asList("ooo", "ooo")));
         assertEquals(0, result.size());
     }
 }
